@@ -1,0 +1,173 @@
+@charset "utf-8";
+
+/* 客服 */
+/*#serviceModal .modal-dialog, #qqServiceModal .modal-dialog{
+	margin: 5px;
+	margin-bottom: 0;
+}
+@media (min-width: 576px) {
+	#serviceModal .modal-dialog, #qqServiceModal .modal-dialog {
+		max-width: inherit;
+	}
+}
+#serviceModal .modal-content, #qqServiceModal .modal-content{
+	border-radius: 6px 6px 0 0;
+}*/
+#serviceModal .modal-body{
+	padding: 10px;
+	padding-bottom: 0;
+}
+.service-list{
+	height: 20rem;
+	width: 100%;
+	position: relative;
+}
+.service-list ul{
+	overflow-y: auto;
+	height: 16.8rem;
+	border-bottom: 1px solid rgba(213,213,213,0.7);
+}
+.service-list li{
+	margin-bottom: 30px;
+}
+.service-list .left div, .service-list .right div{
+	position: relative;
+}
+.service-list .left{
+	text-align: left;
+}
+.service-list .left label, .service-list .right label{
+	color: #929292;
+	font-size: .5rem;
+	font-weight: 500;
+	margin-left: 60px;
+}
+.service-list .left em{
+    width: 50px;
+    height: 40px;
+    position: absolute;
+    z-index: 2;
+    background: url("@{ResourceCDNUrl}/EditionImg-mobile/Lambor1.0/images/mobile/index/icon_service.png") no-repeat center left;
+    background-size: 100% 100%;
+}
+.service-list p{
+	text-align: left;
+    background: #68c615;
+    font-size: .9rem;
+    color: #1f1f1f;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    max-width: 80%;
+    margin-left: 60px;
+}
+.service-list .right{
+	text-align: right;
+}
+.service-list .right p{
+	text-align: left;
+	background: #FFFFFF;
+	border: 1px solid #d9d9d9;
+}
+.service-list .input-row{
+	width: 104%;
+    margin-left: -1%;
+	padding: 5px 0;
+	position: absolute;
+	bottom: 0;
+}
+.service-list .btn-save{
+	margin: 0;
+	padding: 0;
+	width: 21%;
+	margin-left: 1%;
+	height: 2.4rem;
+	line-height: 2.4rem;
+	float: left;
+	color: #ffffff;
+	font-size: 1rem;
+	background: url("@{ResourceCDNUrl}/EditionImg-mobile/Lambor1.0/images/mobile/index/btn_bg.png") no-repeat center;
+	background-size: 100% 100%;
+}
+.input-txt{
+	width: 72%;
+	float: left;
+	height: 2.2rem;
+	line-height: 2.2rem;
+	border-radius: 5px;
+	padding-left: 10px;
+	font-size: .8rem;
+	color: #c5996e;
+	border: 2px solid #d7a65f;
+}
+.input-txt::-webkit-input-placeholder {
+  color: #c5996e;
+}
+.input-txt::-moz-placeholder {
+  color: #c5996e;
+}
+.input-txt:-ms-input-placeholder {
+  color: #c5996e;
+}
+.input-txt::placeholder {
+  color: #c5996e;
+}
+
+/* qq客服 */
+#qqServiceModal .modal-body{
+	padding: 0;
+}
+#qqServiceModal img{
+	max-width: 7rem;
+	width: 100%;
+	margin: 1.5rem auto 0;
+}
+#qqServiceModal dd{
+	margin: 0;
+}
+#qqServiceModal h5{
+	color: #1f1f1f;
+	font-size: 1rem;
+	font-weight: 400;
+	text-align: center;
+}
+#qqServiceModal p{
+	border-top: 1px solid rgba(200,200,200,0.2);
+	margin-top: .5rem;
+    font-size: 1.2rem;
+	padding: .5rem .5rem 1rem;
+	color: #1f1f1f;
+}
+#qqServiceModal p span{
+	color: #c0bba3;
+	font-size: 1rem;
+}
+#qqServiceModal p a{
+	display: initial;
+	color: #b4823a;
+}
+.icon-service1{
+    width: 2.3rem;
+    height: 1.9rem;
+    background: url("@{ResourceCDNUrl}/EditionImg-mobile/Lambor1.0/images/mobile/index/icon_service.png") no-repeat 0;
+    background-size: 100% 100%;
+    display: inline-block;
+    top: .4rem;
+    position: relative;
+    margin-right: .5rem;
+}
+#qqServiceModal ul li{
+    width: 4rem;
+    overflow: hidden;
+    margin: 0 1rem;
+    display: inline-block;
+}
+#qqServiceModal ul li label{
+    height: 1.6rem;
+    overflow: hidden;
+    width: 100%;
+    display: block;
+    font-size: .7rem;
+}
+/* 客服 end */
+

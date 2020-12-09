@@ -1,0 +1,387 @@
+@charset "utf-8";
+
+/* 充值中心 */
+.recharge-wrap .tab-section{
+	width: 95%;
+	height: 110px;
+	padding-top: 12px;
+}
+.recharge-wrap .tab-section .col-6{
+	width: 45.5%;
+	height: 80px;
+	padding-top: 25px;
+	margin: 0 0 0 3%;
+	float: left;
+	background: rgba(0,0,0,0.4);
+	text-align: center;
+}
+.recharge-wrap .tab-section img{
+	height: 1.7rem;
+}
+.recharge-wrap .tab-section p{
+	font-size: .9rem;
+	margin-top: 10px;
+	color: #f5dbb5;
+}
+.recharge-wrap .list-table{
+	padding: 15px;
+	padding-bottom: 0;
+}
+.recharge-wrap .list-table h2{
+	font-size: 1.1rem;
+	color: #f5dbb5;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+.recharge-wrap .list-table .table{
+	width: 100%;
+	overflow-y: auto;
+}
+.recharge-wrap .list-table table, .recoed-wrap .list-table table{
+	width: 100%;
+}
+.recharge-wrap .list-table td, .recoed-wrap .list-table td{
+	position: relative;
+	padding-top: 10px;
+	color: #d7d7d7;
+	font-size: .8rem;
+	text-align: center;
+}
+.recharge-wrap .list-table thead td, .recoed-wrap .list-table thead td{
+	font-size: .9rem;
+	padding: 3px 0;
+	background: rgba(0,0,0,0.3);
+}
+.recharge-wrap .list-table td p{
+    width: 2.8rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.recharge-wrap .list-table td:first-child, .recoed-wrap .list-table td:first-child{
+	width: 3rem;
+}
+.recharge-wrap .list-table td.color-red{
+	width: 30%;
+	padding-right: 1rem;
+}
+.color-yellow{
+	color: #d3b71c !important;
+}
+.color-red{
+	color: #cd2b2b !important;
+}
+.color-gray{
+	color: #a7a7a7 !important;
+}
+.color-success{
+	color: #3aba61 !important;
+}
+.color-orange{
+	color: #d28f41 !important;
+}
+.btn-yellow{
+    color: #FFFFFF;
+    font-size: 12px;
+    margin: 0;
+    width: 40px;
+    height: 21px;
+    padding: 0;
+    line-height: 23px;
+    background: #d0a05d;
+    position: absolute;
+    display: block;
+    top: 7px;
+    right: 0;
+    border-radius: 3px;
+}
+
+/* 充值弹窗 */
+.recharge-form .slider{
+	padding: 10px 0;
+	height: 4rem;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.recharge-form .slider li{
+	position: relative;
+	width: 5.5rem;
+	height: 4rem;
+	background: #FFFFFF;
+	float: left;
+	border-radius: 5px;
+	margin-left: 10px;
+	text-align: center;
+	border: 2px solid #FFFFFF;
+}
+.recharge-form .slider li.active{
+	border: 2px solid #0fa1ff;
+}
+.recharge-form .slider li img{
+	width: 2.5rem;
+	margin-top: 12px;
+}
+.icon-input-clean{
+	position: absolute;
+	top: 7px;
+	right: 7px;
+	width: 1.3rem;
+	height: 1.3rem;
+	margin: .5rem auto;
+	background: url("@{ResourceCDNUrl}/EditionImg-mobile/Lambor1.0/images/mobile/recharge/icon_close.png") no-repeat;
+	background-size: 100% 100%;
+}
+.icon-slider-active{
+	display: none;
+	position: absolute;
+	bottom: -1px;
+	right: -1px;
+	width: 1.7rem;
+	height: 1.6rem;
+	background: url("@{ResourceCDNUrl}/EditionImg-mobile/Lambor1.0/images/mobile/recharge/success.png") no-repeat;
+	background-size: 100% 100%;
+}
+.active .icon-slider-active{
+	display: block;
+}
+
+/* 提现弹窗 */
+/* tab切换 */
+#depositModal .tab-head{
+	margin: -5px 0 0;
+	height: 4rem;
+}
+#depositModal .tab-head li{
+	color: #b26b08;
+	height: 4rem;
+	border-radius: 5px 0 0 0;
+	background: url("@{ResourceCDNUrl}/EditionImg-mobile/Lambor1.0/images/mobile/recharge/tab.jpg") repeat;
+}
+#depositModal .tab-head li.active{
+	color: #FFFFFF;
+	background: url("@{ResourceCDNUrl}/EditionImg-mobile/Lambor1.0/images/mobile/recharge/tab_on.jpg") repeat 100% 100%;
+}
+#depositModal .tab-head li:nth-child(2){
+	border-radius: 0 5px 0 0;
+}
+/* 活动 */
+.withdrawal-form .active-list ul{
+	border-bottom: 1px solid #bcbcbc;
+	padding-bottom: 1rem;
+	margin-bottom: 1rem;
+}
+.withdrawal-form .active-list p{
+	color: #222121;	
+	font-size: .8rem;
+	padding: 0;
+	text-align: left;
+}
+.withdrawal-form .active-list li{
+	position: relative;
+	width: 47%;
+	margin: 1%;
+    display: inline-block;
+}
+.withdrawal-form .active-list li img{
+	width: 100%;
+	border: 2px solid #8b8b8b;
+}
+.withdrawal-form .active-list li.active img{
+	border: 2px solid #0fa1ff;
+}
+.withdrawal-form .active-list .active .icon-slider-active{
+	bottom: .5rem;
+    right: -3px;
+}
+/* 温馨提示 */
+#WarnTipModal p, #WarnTipModal h5{
+	color: #9b6e30;
+	font-size: 1rem;
+	font-weight: 400;
+	text-align: left;
+	padding: 0;
+}
+#WarnTipModal h5{
+	margin-left: 2rem;
+}
+#WarnTipModal h5.title{
+	margin-top: .5rem;
+	margin-left: 0;
+}
+#WarnTipModal p{
+	text-align: center;
+	margin-top: .5rem;
+}
+#WarnTipModal .modal-footer{
+	border: none;
+	width: 90%;
+    margin: .5rem auto 0;
+}
+/* 银行卡 */
+.withdrawal-form .card-list li{
+	position: relative;
+	width: 100%;
+	height: 2.6rem;
+	line-height: 2.6rem;
+	background: #FFFFFF;
+	border-radius: 5px;
+	border: 2px solid #FFFFFF;
+	color: #000000;
+	font-size: 1rem;
+	text-indent: 50px;
+	margin-bottom: 6px;
+}
+#withdrawalModal .withdrawal-form .card-list li{
+	text-indent: 1rem;
+}
+.withdrawal-form .card-list li.active{
+	border: 2px solid #0fa1ff;
+}
+.withdrawal-form .card-list li img{
+	position: absolute;
+	left: 10px;
+	top: 2px;
+	height: 34px;
+}
+.withdrawal-form .card-list li i{
+	float: right;
+    margin-right: 2rem;
+    color: #aaa;
+}
+.withdrawal-form .top-line{
+	border-top: 1px solid rgba(0,0,0,0.1);
+	padding-top: 10px;
+	margin-bottom: 20px;
+}
+#withdrawalModal .withdrawal-form .top-line .icon-input-clean,
+#depositModal .withdrawal-form .top-line .icon-input-clean{
+	top: 17px;
+}
+.withdrawal-form p.error-tip{
+	font-size: 1.5em;
+    margin: 5px 0 10px;
+    color: #ff0000;
+    padding: 0;
+    text-align: left;
+}
+.withdrawal-form h5{
+	font-size: 1.6rem;
+    color: #d8902c;
+    font-weight: 400;
+    text-align: center;
+    padding: .1rem 0 .3rem;
+}
+.withdrawal-form p.warn-tip{
+	font-size: 1.35em;
+    margin: 5px 0 0;
+    color: #9b6e30;
+    padding: 0;
+    text-align: left;
+}
+.withdrawal-form .cord-section{
+	background: rgb(255,255,255,0.8);
+	width: 95%;
+	padding: 3%;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	position: relative;
+}
+.withdrawal-form .btn-purple{
+    width: 5rem;
+    position: absolute;
+    top: .2rem;
+    right: 1%;
+    height: auto;
+    line-height: normal;
+    border-radius: 6px;
+    padding: 4px 0;
+    z-index: 1;
+}
+.withdrawal-form .cord-section label{
+	color: #2a2929;
+	font-size: 1.4em;
+}
+.withdrawal-form .cord-section .row{
+	margin-top: 0;
+}
+.withdrawal-form .cord-section p.error-tip{
+	margin: 5px 0 0;
+	color: #e26847;
+	font-size: 1.3em;
+}
+
+/* 取款密码 */
+#pswModal .withdrawal-form .top-line{
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+#pswModal .withdrawal-form .error-tip{
+    margin-bottom: 10px;
+}
+#pswModal .withdrawal-form p.warn-tip{
+	margin-top: 15px;
+}
+
+/* 设置取款密码 */
+#withdrawalPswModal .withdrawal-form .error-tip{
+    margin-bottom: 10px;
+    color: #ff0000;
+}
+#withdrawalPswModal .withdrawal-form p.warn-tip{
+	margin-top: 15px;
+	color: #d8902c;
+}
+
+/* 洗码量详情 */
+#codeModal table{
+	width: 100%;
+}
+#codeModal td{
+	font-size: .8rem;
+	text-align: center;
+	padding: .3rem 0;
+}
+#codeModal thead td{
+	padding-bottom: 1rem;
+}
+#codeModal .modal-body{
+	height: 15rem;
+	overflow-y: auto;
+	margin: 15px 0;
+	padding: 0 15px;
+}
+#codeModal tfoot td{
+	font-size: .8rem;
+	border-top: 1px solid #817f81;
+}
+
+/* 添加银行卡 */
+#addCardModal .form-select.icon.ml-row{
+    margin-top: 5px;
+    width: 79%;
+    margin-left: 21%;
+}
+#addCardModal .input-group .ml-row select{
+    width: 89%;
+}
+#addCardModal .input-group .form-control.ml-row{
+	margin-top: 5px;
+	margin-left: 22%;
+}
+@media (min-width: 319px) {
+	#addCardModal .input-group .form-control.ml-row {
+	    margin-left: 26%;
+	}
+}
+@media (min-width: 374px) {
+	#addCardModal .input-group .ml-row select{
+	    width: 100%;
+	}
+	#addCardModal .input-group .form-control.ml-row {
+	    margin-left: 23%;
+	}
+	#addCardModal .form-select.icon.ml-row{
+	    width: 77%;
+	    margin-left: 23%;
+	}
+}

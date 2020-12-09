@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+/* 活动列表弹窗 */
+.activity-list{
+	width: 100%;
+}
+.activity-list li{
+	position: relative;
+	background: #FFFFFF;
+	color: #d0a05d;
+	font-size: 1.1rem;
+	text-align: center;
+	height: 4.4rem;
+	line-height: 4.4rem;
+	border-radius: 4.4rem;
+	margin-bottom: 15px;
+	-webkit-box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.25);
+	box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.25);
+	padding: 0 3rem;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.icon-arrow{
+	position: absolute;
+    right: 1.8rem;
+    top: 1.5rem;
+	height: 1.4rem;
+    width: .9rem;
+	background: url("@{ResourceCDNUrl}/EditionImg-mobile/Lambor1.0/images/mobile/index/icon_arrow.png") no-repeat;
+	background-size: 100% 100%;
+}
+.icon-hot{
+	position: absolute;
+    top: 0px;
+    left: -1px;
+    height: 2.9rem;
+    width: 3.8rem;
+	background: url("@{ResourceCDNUrl}/EditionImg-mobile/Lambor1.0/images/mobile/index/hot.png") no-repeat;
+	background-size: 100% 100%;
+}
+/* 活动详情弹窗 */
+#activityInfoModal .modal-body{
+	padding: 0;
+}
+#activityInfoModal.modal.show .modal-dialog{
+	margin-top: 6rem;
+}
+.activity-banner{
+	width: 100%;
+	margin-bottom: 10px;
+}
+.activity-banner img{
+	width: 100%;
+}
+.activity-info{
+	width: 80%;
+	margin: auto;
+}
+.activity-info h3{
+	font-size: 1.5rem;
+	color: #0b0b0b;
+}
+.activity-info h5{
+	font-size: 1rem;
+	font-size: 1.2rem;
+	color: #0b0b0b;
+}
+.activity-info p{
+	font-size: 1rem;
+	color: #2e2e2e;
+	text-align: left;
+	padding-bottom: 1rem;
+}
+
+/* 活动列表 */
+.activity-box {
+	width: 97%;
+	margin: auto;
+}
+.activity-box h3{
+	width: 8rem;
+	height: 2.2rem;
+	margin: 1.5rem auto .2rem;
+    background: url("@{ResourceCDNUrl}/EditionImg-mobile/Lambor1.0/images/mobile/activity/title.png") no-repeat center;
+    background-size: 100% 100%;
+}
+.activity-box a{
+	float: left;
+	width: 45%;
+	height: 6.2rem;
+	margin-left: 3%;
+}
+.activity-box a img{
+	width: 100%;
+    border: 2px solid hsla(0,0%,39%,.6);
+    box-shadow: 0 0 10px 0px rgba(25, 25, 25, 0.5);
+}
+.activity-box a.active img{
+	border-color: #0fa1ff;
+}

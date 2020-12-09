@@ -1,0 +1,150 @@
+@charset "utf-8";
+
+/* 注册 */
+.register-wrap {
+	margin: 5%;
+}
+.register-wrap .logo h2{
+    font-size: 2em;
+    line-height: 0rem;
+    color: #d0a05d;
+    font-weight: 500;
+    display: inline-block;
+    top: -20px;
+    position: relative;
+}
+.register-wrap .logo{
+	margin-bottom: 1rem;
+}
+.register-wrap .logo img{
+	width: 2.5rem;
+	margin-right: 5px;
+}
+.register-wrap .form-control{
+	height: 2.6rem;
+	line-height: 2.6rem;
+	padding-right: 0;
+	padding-right: 0;
+}
+.register-wrap .input-group label{
+	color: #eeeeee;
+}
+.register-wrap .input-group .form-control.input-scan{
+	width: 50%;
+}
+.register-wrap .img-scan{
+    width: 28%;
+    height: 2.6rem;
+    border-radius: 3px;
+    float: right;
+}
+.register-wrap .btn{
+	opacity: 1;
+	border: 0;
+	border-top: 1px solid rgba(255,255,255,0.6);
+}
+.register-wrap .form-checkbox+label{
+	background: url("@{ResourceCDNUrl}/EditionImg-mobile/Lambor1.0/images/mobile/register/icon_check.png") no-repeat center;
+    background-size: 100% 100%;
+    padding: .55rem;
+}
+.form-checkbox:checked+label:after{
+	content: '\2713';
+    font-size: 20px;
+    top: -5px;
+    left: 3px;
+}
+.register-wrap .checkbox-row{
+	color: #ffb12a;
+	margin: 3rem 0 0;
+}
+.register-wrap .checkbox-row a{
+	display: initial;
+	color: #4babe2;
+}
+.register-wrap .error-tip{
+	color: #ff6454;
+}
+@media (min-width: 319px){
+	.register-wrap .input-group .form-control{
+	    width: 76%;
+	}
+	.register-wrap .input-group .form-control.input-scan {
+	    width: 48%;
+	}
+}
+@media (min-width: 374px){
+	.register-wrap .input-group .form-control{
+	    width: 77%;
+	}
+}
+
+/* 用户协议 */
+#userAgreementModal p{
+	font-size: 1.4em;
+	color: #323232;
+	text-align: left;
+}
+
+.register-wrap .input-group p.form-control{
+	display: -webkit-box;
+	background: none;
+	color: #f59815;
+    height: 3rem;
+    line-height: 3rem;
+    text-indent: 0;
+}
+.register-wrap .input-group p.form-control i{
+	color: #bcbcbc;
+}
+
+/* 代理加盟 */
+.join-us-wrap .logo{
+    margin-bottom: -1rem;
+}
+.join-us-wrap h2.title{
+    color: #FFFFFF;
+    color: rgba(255,255,255,0.3);
+    font-size: .9rem;
+    font-weight: 500;
+    text-align: left;
+    background: rgba(0,0,0,0.3);
+    width: 100%;
+    margin-left: -5%;
+    margin-top: 1rem;
+    padding: .5rem 5%;
+}
+.join-us-wrap .input-group .form-select.icon.ml-row select{
+    width: 100%;
+}
+.join-us-wrap .input-group select{
+    width: 71%;
+}
+.join-us-wrap .input-group textarea.form-control{
+    padding: 0;
+    height: 6rem;
+    line-height: 1.6rem;
+}
+.join-us-wrap .form-select.icon.ml-row,
+.join-us-wrap .input-group .form-control.ml-row{
+    margin-top: 5px;
+    width: 71%;
+    margin-left: 29%;
+}
+.join-us-wrap .input-group label{
+    width: 28%;
+    text-transform:none;
+}
+.join-us-wrap .input-group .form-control.input-scan{
+    width: 41%;
+}
+@media (min-width: 319px){
+    .join-us-wrap .input-group .form-control{
+        width: 70%;
+    }
+}
+@media (min-width: 374px){
+    .join-us-wrap .input-group .form-control{
+        width: 71%;
+    }
+}

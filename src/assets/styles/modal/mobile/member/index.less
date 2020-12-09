@@ -1,0 +1,428 @@
+@charset "utf-8";
+
+/* 个人中心 */
+.member-wrap .head-section{
+	position: relative;
+	padding: 2rem 3% 1rem;
+	height: 6rem;
+	display: inline-block;
+}
+.member-wrap .head-section .left{
+	float: left;
+	width: 20%;
+	margin-right: 4%;
+	margin-left: 3%;
+}
+.member-wrap .head-section .left img{
+	width: 100%;
+	border-radius: 100%;
+}
+.member-wrap .head-section p{
+	color: #fffef9;
+	font-size: 1rem;
+	margin-bottom: .5rem;
+}
+.member-wrap .head-section .left p{
+	text-align: center;
+}
+.member-wrap .head-section .fl{
+	width: 73%;
+}
+.member-wrap .head-section .btn{
+  background: none;
+  border: 1px solid #d0ab83;
+  width: auto;
+  height: auto;
+  color: #f5dbb5;
+  font-size: 1rem;
+  padding: .4rem .6rem;
+  margin: 0 .4rem .6rem;
+}
+.member-wrap .head-section p .btn{
+	margin-bottom: 0;
+	margin-top: 1rem;
+}
+.member-wrap .head-section p .btn.btn-refresh{
+    margin-top: 0;
+    padding: .1rem .6rem;
+    font-size: .9rem;
+}
+.member-wrap .head-section .btn.btn-bind{
+  background: #d0ab83;
+  color: #FFFFFF;
+}
+.member-wrap .footer-section {
+    display: inline-block;
+    margin: 5%;
+    padding: .6rem 2% 1.3rem;
+    height: 5rem;
+    margin-top: 1rem;
+    background: rgba(0,0,0,.4);
+    width: 86%;
+}
+.member-wrap .footer-section .left{
+	margin-right: 4%;
+	float: left;
+}
+.member-wrap .footer-section .left img{
+	width: 5.5rem;
+}
+.member-wrap .footer-section .fl{
+	width: 67%;
+}
+.member-wrap .footer-section .fl p{
+	color: #e1c299;
+	font-size: .9rem;
+}
+.member-wrap .footer-section .fl .btn{
+  background: none;
+  border: 1px solid #e1c299;
+  width: auto;
+  height: auto;
+  color: #e1c299;
+  font-size: .9rem;
+  padding: 8px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+/* tab按钮 */
+.member-wrap .tab-section li{
+	width: 29.33%;
+	margin-left: 3%;
+	margin-bottom: 10px;
+	float: left;
+	padding: 1.2rem 0;
+	background: rgba(0,0,0,0.3);
+	text-align: center;
+}
+.member-wrap .tab-section li img{
+	width: 2rem;
+}
+.member-wrap .tab-section li p{
+	color: #f5dbb5;
+	font-size: .9rem;
+	margin-top: 5px;
+}
+
+/* 公告信息 */
+.msg-wrap{
+	position: relative;
+	padding-top: 3.5rem;
+}
+.msg-wrap .error-row{
+	height: 1rem;
+}
+.msg-wrap .error-row .error-tip{
+	margin: 0;
+	padding-top: 5px;
+}
+.msg-wrap .tab-section, .recoed-wrap .tab-section{
+	margin: 0 3%;
+}
+.msg-wrap .tab-section .btn, .recoed-wrap .tab-section .btn{
+	width: 49%;
+	height: 2rem;
+	line-height: 2rem;
+	margin: 10px 0;
+	border: none;
+	border-top: 1px solid rgba(255,255,255,0.3);
+	opacity: 1;
+}
+.msg-wrap .tab-section .btn-gold, .recoed-wrap .tab-section .btn-gold{
+	color: #000;
+	margin-right: 1%;
+}
+.msg-wrap .msg-list li{
+	margin-bottom: 1rem;
+	text-align: center;
+	padding: 0 3%;
+	margin-top: 10px;
+}
+.msg-wrap .msg-list li label{
+	color: #FFFFFF;
+	font-size: 1.3em;
+}
+.msg-wrap .msg-list li .msg{
+	background: #FFFFFF;
+	border-radius: 3px;
+	padding: 10px 0;
+	margin-top: 6px;
+}
+.msg-wrap .msg-list li .msg p{
+	font-size: 1.5em;
+	color: #000000;
+	text-align: left;
+	text-indent: 2px;
+	padding: 5px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+}
+.msg-wrap .msg-list li .msg .more{
+	border-top: 1px solid #b9b9b9;
+	padding-top: 5px;
+	color: #505050;
+	font-size: 1.5em;
+}
+.icon-more{
+	width: .9em;
+	height: .5em;
+	background: url("@{ResourceCDNUrl}/EditionImg-mobile/Lambor1.0/images/mobile/member/icon_more.png") no-repeat;
+	background-size: 100% 100%;
+	display: inline-table;
+    margin-left: 5px;
+    transition: All 0.4s ease-in-out;
+    -webkit-transition: All 0.4s ease-in-out;
+    -moz-transition: All 0.4s ease-in-out;
+    -o-transition: All 0.4s ease-in-out;
+}
+.msg-wrap .msg-list li.open .msg p{
+	display: block;
+}
+.open .icon-more{
+	transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+}
+
+/* 记录查询 */
+.recoed-wrap .tab-section .row .error-tip{
+	margin-top: 2px;
+}
+.recoed-wrap .tab-section .btn{
+	margin-top: 0;
+}
+.recoed-wrap .tab-section .form-control, .msg-wrap .tab-section .form-control{
+	width: 38%;
+	margin-right: 1%;
+	padding-right: 0;
+	float: left;
+	color: #202020;
+	font-size: .8rem;
+}
+.recoed-wrap .tab-section .btn-bind, .msg-wrap .tab-section .btn-bind{
+	background: #d0a05d;
+	float: left;
+	width: 22%;
+	margin: 0;
+	color: #1c1c1c;
+}
+.recoed-wrap .tab-section .row, .msg-wrap .tab-section .row{
+	height: 3rem;
+	margin-top: 6px;
+}
+.recoed-wrap .tab-section select, .msg-wrap .tab-section select{
+	height: 3rem;
+    border: 1px solid #e1c299;
+}
+.recoed-wrap .tab-section .form-select.icon::after,
+.msg-wrap .tab-section .form-select.icon::after{
+    top: 1%;
+    width: 1.4rem;
+    height: 3rem;
+    background: url("@{ResourceCDNUrl}/EditionImg-mobile/Lambor1.0/images/mobile/recharge/icon_down1.jpg") no-repeat center center;
+    background-size: 100% 100%;
+}
+.recoed-wrap .list-table{
+	padding: 3%;
+}
+.recoed-wrap .list-table td{
+	padding-top: 15px;
+}
+.recoed-wrap .list-table td p{
+	font-size: .6rem;
+	line-height: .5rem;
+}
+
+/* 修改密码 */
+.modify-wrap .tab-section,
+.fund-wrap .tab-section{
+    margin: 0 5%;
+}
+.modify-wrap form .input-group label,
+.fund-wrap form .input-group label{
+	color: #ffffff;
+}
+.modify-wrap .tab-section form .btn,
+.fund-wrap .tab-section form .btn{
+	width: 100%;
+	color: #FFFFFF;
+	margin-top: 0;
+}
+.modify-wrap .tab-section .row,
+.fund-wrap .tab-section .row{
+	height: auto;
+}
+.modify-wrap .tab-section .form-control,
+.fund-wrap .tab-section .form-control{
+	width: 76%;
+	float: inherit;
+    display: inline-block;
+}
+/* 资金管理 */
+.fund-wrap .tab-section .row{
+	margin-top: .8rem;
+}
+.fund-wrap form .input-group label,
+.fund-wrap .tab-section .form-control{
+	height: 2.6rem;
+	line-height: 2.6rem;
+}
+.fund-wrap .tab-section i.form-control{
+	background: none;
+	color: #f59815;
+}
+.fund-wrap p.error-tip{
+	color: #ff6454;
+}
+.fund-wrap .tab-section .form-control img{
+	float: left;
+	height: 2.6rem;
+}
+.fund-wrap .tab-section .form-control i{
+	color: #bebebe;
+}
+.fund-wrap .tab-section .form-control p{
+	float: left;
+    width: 50%;
+    text-align: center;
+}
+.fund-wrap .tab-section .form-control.active i{
+	color: #cd7902;
+	margin-left: 1rem;
+}
+/* 资金管理 厂商列表 */
+#gameVendorListModal ul{
+	max-height: 30rem;
+	overflow:hidden;
+	overflow-y: auto;
+}
+#gameVendorListModal ul li{
+	background: #FFFFFF;
+	height: 2.5rem;
+    margin-top: .2rem;
+}
+#gameVendorListModal ul li.click-flase{
+	background: #e8e8e8;
+}
+#gameVendorListModal ul li.click-flase em{
+	color: #AAAAAA;
+}
+#gameVendorListModal ul li img{
+	height: 2.5rem; 
+	float: left;
+	margin-left: 2%;
+}
+#gameVendorListModal ul li label{
+    float: left;
+    margin-left: 15%;
+    line-height: 2.5rem;
+    font-size: .9rem;
+}
+#gameVendorListModal ul li em{
+	font-size: .9rem;
+    color: #f59815;
+    line-height: 2.5rem;
+    float: right;
+    font-style: normal;
+    text-align: left;
+    width: 35%;
+}
+
+/* 添加桌面快捷教程 */
+.tutorial-wrap .tab-section{
+	text-align: center;
+}
+.tutorial-wrap .tab-section img{
+	width: 86%;
+	margin: 1rem auto;
+}
+.tutorial-wrap .tab-section img.mt-0{
+	margin-top: -1rem;
+}
+.tutorial-wrap .tab-section p{
+	font-size: 1rem;
+	color: #FFFFFF;
+	text-align: left;
+}
+.tutorial-wrap .tab-section p label{
+	color: #ffb12a;
+}
+.tutorial-wrap .tab-section p i{
+	font-size: .8rem;
+}
+
+/* 生成二维码 */
+#scanModal .modal-dialog{
+	margin: 1.4rem;
+}
+#scanModal .modal-dialog .modal-content{
+	height: 36rem;
+}
+#scanModal .modal-body{
+	padding: 0;
+    position: initial;
+    display: contents;
+}
+/*#scanModal .modal-content{
+    height: 35rem;
+	background: url("@{ResourceCDNUrl}/EditionImg-mobile/Lambor1.0/images/mobile/member/user_scan_bg1.jpg") no-repeat top center;
+	background-size: 100% 100%;
+}*/
+#scanModal .modal-close {
+    position: absolute;
+    right: -1rem;
+    top: -1rem;
+    width: 2rem;
+    height: 2rem;
+    background: url("@{ResourceCDNUrl}/EditionImg-mobile/Lambor1.0/images/mobile/index/icon_close2.png") no-repeat center;
+    background-size: 60% 60%;
+    background-color: rgba(200, 162, 122, 0.9);
+    border-radius: 100%;
+}
+#scanModal #output{
+    position: absolute;
+    bottom: 2.2rem;
+    text-align: center;
+    width: 100%;
+    left: 4px;
+}
+
+/* 按钮切换 */
+.tab-head {
+	height: 3.5rem;
+	margin-bottom: 1.5rem;
+}
+.tab-head li{
+	width: 50%;
+	float: left;
+	text-align: center;
+	color: rgba(255,255,255,0.3);
+	font-size: 1rem;
+	height: 3.5rem;
+	line-height: 3.5rem;
+	background: rgba(0,0,0,0.3);
+}
+.tab-head li.active{
+	background: url("@{ResourceCDNUrl}/EditionImg-mobile/Lambor1.0/images/mobile/member/tab_on.png") no-repeat top center;
+	background-size: 100% 100%;
+	color: #FFFFFF
+}
+
+#copyObj{
+	height: 0;
+	border: none;
+}
+
+/* 列表暂无数据 */
+.scroll-footer-tip{
+	height: 2rem;
+	line-height: 2rem;
+	font-size: .9rem;
+	color: #d7d7d7;
+	text-align: center;
+}

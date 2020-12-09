@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+/* 横屏显示 */
+
+/* 首页 banner */
+.landscape #bannerSlider {
+	height: 270px;
+}
+/* 弹出框 */
+.landscape .modal-dialog,
+.landscape #qqServiceModal .modal-dialog, 
+.landscape #serviceModal .modal-dialog {
+    max-width: 25rem;
+}
+.landscape .modal-dialog {
+    margin: 30px auto;
+}
+.landscape .modal-footer-close {
+    width: 2.3rem;
+    height: 4rem;
+}
+.landscape #scanModal .modal-dialog{
+	margin: auto;
+}
+.landscape #scanModal .modal-dialog .modal-content{
+	height: 13rem;
+}
+.landscape #depositModal .modal-content{
+	margin-top: 6rem;
+}
+.landscape #addCardModal .modal-content{
+	margin-top: 8rem;
+}
+
+/* 头部 */
+.landscape .play-game-wrap header{
+	width: 3rem;
+	height: 3rem;
+}
+.landscape .play-game-wrap header h2{
+	display: none;
+}
+
+/* 登录 */
+.landscape .login-wrap, .landscape .register-wrap {
+    margin: 2% 25%;
+}
+/* 主题 */
+.landscape .icon-theme-list {
+    max-width: 20rem;
+}
+.landscape .icon-theme-list li {
+    width: 3.8rem;
+}
+.landscape .icon-theme-list li img, .landscape .circle-black-bg, .landscape .circle-brown-bg{
+	height: 3.8rem;
+}
+
+/* 教程 */
+.landscape .tutorial-wrap .tab-section {
+    margin: 0 25%;
+}
+
+@media (min-width: 666px) {
+	.landscape #bannerSlider {
+		height: 320px;
+	}
+}
+@media (min-width: 735px) {
+	.landscape #bannerSlider {
+		height: 350px;
+	}
+}
+@media (min-width: 810px) {
+	.landscape #bannerSlider {
+		height: 388px;
+	}
+}
+@media (min-width: 1023px) {
+	.landscape #bannerSlider {
+		height: 488px;
+	}
+}
+@media (min-width: 1365px) {
+	.landscape #bannerSlider {
+		height: 650px;
+	}
+}
+/* 横屏显示 end */
+
